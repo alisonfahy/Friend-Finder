@@ -1,0 +1,26 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "Find a friend!",
+  "main": "friends.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisonfahy/Friend-Finder.git"
+  },
+  "author": "Alison Fahy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alisonfahy/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/alisonfahy/Friend-Finder#readme"
+}

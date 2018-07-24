@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Survey</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="./server.js"></script>
+  <script src="./friends.js"></script>
+</head>
+
+<body>
+
+<!-- Page header -->
+
+<h2>About You</h2>
+<hr>
+
+<!-- User input form -->
+
+<form>
+  <div class="form-group">
+    <label for="name">Name (Required)</label>
+    <input type="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+
+  </div>
+  <div class="form-group">
+    <label for="insertPhoto">Link to Photo Image (Required)</label>
+    <input type="photo" class="form-control" id="insertPhoto" placeholder="Photo Link">
+  </div>
+</form>
+
+<!-- Dropdown button and menu -->
+
+<form>
+  <h6>Question 1</h6>
+  <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+  <select id="q1">
+    <option value="one">1 (Strongly disagree)</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5 (Strongly agree)</option>
+  </select>
+</form>
+<br>
+
+<form>
+  <h6>Question 2</h6>
+  <p>Generally speaking, you rely more on your experience than your imagination.</p>
+  <select id="q2">
+    <option value="one">1 (Strongly disagree)</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5 (Strongly agree)</option>
+  </select>
+</form>
+<br>
+
+<form>
+  <h6>Question 3</h6>
+  <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+  <select id="q3">
+    <option value="one">1 (Strongly disagree)</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5 (Strongly agree)</option>
+  </select>
+</form>
+<br>
+
+<form>
+  <h6>Question 4</h6>
+  <p>You rarely do something just out of sheer curiosity.</p>
+  <select id="q4">
+    <option value="one">1 (Strongly disagree)</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5 (Strongly agree)</option>
+  </select>
+</form>
+<br>
+
+<form>
+  <h6>Question 5</h6>
+  <p>People can rarely upset you.</p>
+  <select id="q5">
+    <option value="one">1 (Strongly disagree)</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5 (Strongly agree)</option>
+  </select>
+</form>
+<br>
+
+<form>
+  <h6>Question 6</h6>
+  <p>It is often difficult for you to relate to other people’s feelings.</p>
+  <select id="q6">
+    <option value="one">1 (Strongly disagree)</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5 (Strongly agree)</option>
+  </select>
+</form>
+<br>
+
+<form>
+  <h6>Question 7</h6>
+  <p>In a discussion, truth should be more important than people’s sensitivities.</p>
+  <select id="q7">
+    <option value="one">1 (Strongly disagree)</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5 (Strongly agree)</option>
+  </select>
+</form>
+<br>
+
+<form>
+  <h6>Question 8</h6>
+  <p>You rarely get carried away by fantasies and ideas.</p>
+  <select id="q8">
+    <option value="one">1 (Strongly disagree)</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5 (Strongly agree)</option>
+  </select>
+</form>
+<br>
+
+<form>
+  <h6>Question 9</h6>
+  <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
+  <select id="q9">
+    <option value="one">1 (Strongly disagree)</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5 (Strongly agree)</option>
+  </select>
+</form>
+<br>
+
+<form>
+  <h6>Question 10</h6>
+  <p>You feel more energetic after spending time with a group of people.</p>
+  <select id="q10">
+    <option value="one">1 (Strongly disagree)</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5 (Strongly agree)</option>
+  </select>
+</form>
+<br>
+
+<!-- Submit button at bottom of page -->
+
+<!-- <button type="button" id="submit">Submit</button> -->
+
+<!-- Modal window -->
+
+<!-- Trigger/Open The Modal -->
+<button class="btn btn-danger btn-lg" id="myBtn">Find A Match</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="match" >You have been matched with:</p>
+    <!-- link to matched person goes here -->
+  </div>
+
+</div>
+
+<style>
+  /* The Modal (background) */
+
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button */
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+
+  // // ==================MODAL WINDOW=====================================
+
+  // // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on the button, open the modal 
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+
+</body>
+
+</html>
